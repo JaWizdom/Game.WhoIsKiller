@@ -1232,37 +1232,13 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-		p => {
-			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			const n2 = p._GetNode(2);
-			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) + 60);
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			const n2 = p._GetNode(2);
-			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) - 55);
-		},
-		() => 3,
+		() => "Suspect_Tadsapong",
+		() => 650,
+		() => 390,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpInstVar_Family();
 		},
-		p => {
-			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			const n2 = p._GetNode(2);
-			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) - 80);
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			const n2 = p._GetNode(2);
-			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) - 90);
-		},
-		() => 650,
-		() => 390,
 		() => 460,
 		() => 360,
 		() => 810,
@@ -1270,44 +1246,33 @@ self.C3_ExpressionFuncs = [
 		() => 560,
 		() => 1030,
 		() => 115,
-		() => 1,
-		() => "FF_Ding",
+		() => "FF_Click",
+		() => 30,
 		() => 0,
-		() => "AllClues",
+		() => "Button_Confirm",
 		() => 665,
 		() => 380,
 		() => 260,
-		() => "AllClues2",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const v1 = p._GetNode(1).GetVar();
-			return () => and((and("เบาะแส: ", v0.GetValue()) + " / "), v1.GetValue());
-		},
-		() => "EGA_Bg",
-		() => -20,
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		},
-		() => 7,
-		() => "Suspect_Tadsapong",
 		() => "Suspect_Arisa",
 		() => "Selected",
 		() => "Idle",
 		() => "Suspect_Winai",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
 		() => "",
-		() => "FF_Click",
-		() => 30,
-		() => "Button_Confirm",
 		() => "Button_Start",
 		() => "https://wizdom.co.th/",
 		() => "NewWindow",
+		() => 1,
 		() => 2,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
 		},
 		() => "Start_Layout",
+		() => "EGA_Bg",
 		() => "ในคืนหนึ่ง 'ศิลปินชื่อดังระดับประเทศ' ถูกพบเป็นศพในห้องสตูดิโอวาดภาพของตนเอง บรรยากาศในห้องเหมือนกำลังทำงานแต่กลับมีร่องรอยความวุ่นวายเล็กน้อยและ 'ภาพวาดชิ้นสุดท้าย' ที่ยังไม่เสร็จ... เบื้องหลังคราบเลือดและสีน้ำมัน ใครคือผู้อยู่เบื้องหลังอาชญากรรมสะเทือนขวัญนี้?",
 		() => "FF_Typewriter",
 		() => 20,
@@ -1325,7 +1290,6 @@ self.C3_ExpressionFuncs = [
 			return () => f0(v1.GetValue());
 		},
 		() => "Button_Next",
-		() => "GroupFade",
 		() => 640,
 		() => 1280,
 		() => 720,
@@ -1334,7 +1298,53 @@ self.C3_ExpressionFuncs = [
 		() => "เขาไม่อาจรับมือกับความล้มเหลวได้ หลังจากพลาดทุนจากศิลปิน ผู้เป็นแรงบันดาลใจสูงสุด ความผิดหวังค่อย ๆ แปรเปลี่ยนเป็นความ คลั่งแค้น เขาวางแผนอย่างเงียบงัน บรรจงสเกตช์ภาพการฆาตกรรมลงบนหน้ากระดาษ ราวกับกำลังสร้างงานศิลป์ ก่อนจะลงมือทำจริง...\n\nการตายในครั้งนี้ ไม่ใช่อารมณ์ชั่ววูบ แต่คือ “ผลงานชิ้นเอก” ของเขา การล้างแค้นในคราบของศิลปะที่บิดเบี้ยว จนไม่หลงเหลือเค้าเดิมของความเป็นมนุษย์ ",
 		() => "Result_Text",
 		() => "Button_Home",
-		() => "Button_StartAgain"
+		() => "Button_StartAgain",
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) + 60);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) - 55);
+		},
+		() => 3,
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) - 80);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - (n2.ExpObject() / 2)) - 90);
+		},
+		() => "FF_Ding",
+		() => "AllClues",
+		() => 600,
+		() => 70,
+		() => 700,
+		() => 800,
+		() => 4,
+		() => 900,
+		() => 5,
+		() => 1000,
+		() => 6,
+		() => 1100,
+		() => 7,
+		() => 1200,
+		() => "AllClues2",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			return () => and((and("เบาะแส: ", v0.GetValue()) + " / "), v1.GetValue());
+		},
+		() => -20
 ];
 
 
